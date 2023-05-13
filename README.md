@@ -1,0 +1,1 @@
+QQChannelChatGPT的hugchat插件。
