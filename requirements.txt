@@ -1,1 +1,1 @@
-hugchat
+hugchat~=0.0.6.1
