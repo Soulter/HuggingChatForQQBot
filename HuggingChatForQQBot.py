@@ -11,7 +11,7 @@ class HuggingChatForQQBotPlugin:
     初始化函数, 可以选择直接pass
     """
     def __init__(self) -> None:
-        self.chatbot = hugchat.ChatBot("cookies_hc.json")
+        self.chatbot = hugchat.ChatBot(cookie_path = "cookies_hc.json")
         print("启动HuggingChatForQQBot插件")
 
 
@@ -63,7 +63,7 @@ class HuggingChatForQQBotPlugin:
         return {
             "name": "HuggingChatForQQBot",
             "desc": "使用hugging-chat-api实现聊天功能",
-            "help": "HuggingChatForQQBot插件，使用hugging-chat-api，实现聊天功能\n使用方法：先要获取cookies，方法见github.com/Soulter/hugging-chat-api\n\n发送 hc + 空格 + 消息，即可调用hugchat聊天功能",
+            "help": "HuggingChatForQQBot插件，使用hugging-chat-api，实现聊天功能\n使用方法：先要获取cookies，方法见github.com/Soulter/hugging-chat-api，然后保存cookies到机器人目录下：新建文件cookies_hc.json，填进去\n\n发送 hc + 空格 + 消息，即可调用hugchat聊天功能",
             "version": "v1.0.2",
             "author": "Soulter"
         }
